@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+    <h1 align="center">Notes</h1>
+    <form method="POST">
+        <form class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <input type="text" name="minStarsNumber" id="minStarsNumber" placeholder="MIN STARS">
+                    <input type="text" name="maxStarsNumber" id="maxStarsNumber" placeholder="MAX STARS">   
+                </div>
+                <div class="col-sm-6">
+                    <input type="date" name="lastRepo" id="lastRepo" placeholder="Last update repository">
+                    <input type="text" name="programingLanguage" id="programingLanguage" placeholder="Programing Languages">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">SEARCH</button>
+        </form>
+        <br />
+      <div align="center">
+          <h1>Here we will output the search results</h1>
+      </div>
+    </form>
+    {% endblock %}
